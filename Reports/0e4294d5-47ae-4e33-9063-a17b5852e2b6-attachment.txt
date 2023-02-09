@@ -1,0 +1,4 @@
+[32mINFO    [0m WDM:logger.py:11 ====== WebDriver manager ======
+[32mINFO    [0m WDM:logger.py:11 Get LATEST chromedriver version for google-chrome 109.0.5414
+[32mINFO    [0m WDM:logger.py:11 Driver [C:\Users\GS-3373\.wdm\drivers\chromedriver\win32\109.0.5414\chromedriver.exe] found in cache
+[32mINFO    [0m root:demo_Page.py:40 Login Failed
