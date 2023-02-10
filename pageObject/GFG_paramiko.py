@@ -66,12 +66,15 @@ class MachinePerformance:
         print(machinmemory)
         if machinmemory == 0:
             self.logg.info("Memory is showing 0 % Usage ")
+            print("Memory is showing 0 % Usage ")
             assert False
         elif machinmemory > 90.00:
             self.logg.info("Test case Failed Due to current Memory usage is " + str(machinmemory) + "%")
+            print("Test case Failed Due to current Memory usage is " + str(machinmemory) + "%")
             assert False
         else:
             self.logg.info("current Memory usage is " + str(machinmemory) + "%")
+            print("current Memory usage is " + str(machinmemory) + "%")
             assert True
 
     def testUsage(self, hostname, username, password):
@@ -81,12 +84,15 @@ class MachinePerformance:
         print(usage)
         if usage == 0:
             self.logg.info("Disk usage  is showing 0 % ")
+            print("Disk usage  is showing 0 % ")
             assert False
         elif usage > 90.00:
             self.logg.info("Test case Failed Due to Disk usage is " + str(usage) + "%")
+            print("Test case Failed Due to Disk usage is " + str(usage) + "%")
             assert False
         else:
             self.logg.info("current Disk usage is " + str(usage) + "%")
+            print("current Disk usage is " + str(usage) + "%")
             assert True
 
     def testCpu(self, hostname, username, password):
@@ -96,10 +102,13 @@ class MachinePerformance:
         print(usage)
         if usage == 0:
             self.logg.info("CPU  usage  is showing 0 % ")
+            print("CPU  usage  is showing 0 % ")
             assert False
         elif usage > 90.00:
             self.logg.info("Test case Failed Due to CPU usage is " + str(usage) + "%")
+            print("Test case Failed Due to CPU usage is " + str(usage) + "%")
             assert False
         else:
             self.logg.info("current CPU  usage is " + str(usage) + "%")
+            print("current CPU  usage is " + str(usage) + "%")
             assert True
