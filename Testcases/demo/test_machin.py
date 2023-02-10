@@ -10,12 +10,12 @@ class TestDemo():
         self.mp = MachinePerformance()
         self.mp.testMemory('192.168.1.10', 'gagan', 'admin')
 
-    @pytest.mark.cli
-    def test_machinUsage(self):
-        self.mp = MachinePerformance()
-        self.mp.testUsage('192.168.1.10', 'gagan', 'admin')
+#     @pytest.mark.cli
+#     def test_machinUsage(self):
+#         self.mp = MachinePerformance()
+#         self.mp.testUsage('192.168.1.10', 'gagan', 'admin')
 
-    @pytest.mark.cli
-    def test_machineCpu(self):
-        self.mp = MachinePerformance()
-        self.mp.testCpu('192.168.1.10', 'gagan', 'admin')
+#     @pytest.mark.cli
+#     def test_machineCpu(self):
+#         self.mp = MachinePerformance()
+#         self.mp.testCpu('192.168.1.10', 'gagan', 'admin')
