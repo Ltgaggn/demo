@@ -13,8 +13,8 @@ class MachinePerformance:
             global client
             client = paramiko.SSHClient()
             client.load_system_host_keys()
-            client.connect(hostname, port=22, username=username, password=password)
-            (stdin, stdout, stderr) = client.exec_command('free -m | awk \'NR==2{printf "%.2f%%", $3*100/$2 }\'')
+            client.connect(hostname, port=22, username=username, password=password, timeout=5)
+            
 
         except Exception as e:
             self.logg.info(e)
