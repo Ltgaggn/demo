@@ -21,7 +21,8 @@ class TestDemo(BaseClass):
         self.driver.get("https://www.saucedemo.com/")
         self.lg = DemoPage(self.driver)
         self.lg.login(username, password)
-
+    
+    @pytest.mark.ui
     @pytest.mark.parametrize("username,password", [
         ("standard_user", "secret_sauce")
     ]
